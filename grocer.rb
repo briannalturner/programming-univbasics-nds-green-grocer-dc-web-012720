@@ -16,6 +16,7 @@ def consolidate_cart(cart)
   
   while index < cart.length do 
     item_name = cart[index][:item]
+    inner_index = 0 
     
     #iterate over new cart to see if anything matches
     while inner_index < new_cart.length do
