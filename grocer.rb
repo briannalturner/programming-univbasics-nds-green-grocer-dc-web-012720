@@ -40,14 +40,6 @@ def consolidate_cart(cart)
   puts new_cart
 end
 
-
-test_cart = [
-  {:item => "AVOCADO", :price => 3.00, :clearance => true },
-  {:item => "AVOCADO", :price => 3.00, :clearance => true },
-  {:item => "KALE", :price => 3.00, :clearance => false}
-]
-puts consolidate_cart(test_cart)
-
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
