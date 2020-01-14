@@ -58,7 +58,7 @@ def apply_coupons(cart, coupons)
         }
         new_arr << items
       else
-        nil
+        new_arr << cart[index]
       end
     end
         
