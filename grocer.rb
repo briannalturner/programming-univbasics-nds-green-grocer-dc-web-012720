@@ -45,11 +45,21 @@ def apply_coupons(cart, coupons)
   index = 0 
   
   while index < cart.length do
-    if cart[index][:count] == coupons[index][:count]
-      new_item = {:item => "#{cart[index]} W/ COUPON"
-        :price => coupons[index][:price],
-        :cost => 
-      }
+    item_name = cart[index][:item]
+    
+    new_item = find_item_by_name_in_collection(item_name, new_cart)
+    if new_item
+      if cart[index][:count] == coupons[index][:num]
+        new_item = {:item => "#{cart[index]} W/ COUPON"
+          :price => coupons[index][:price],
+          :cost => 
+        }
+      else
+        
+      end
+        
+        
+        
     index += 1 
   end
   
