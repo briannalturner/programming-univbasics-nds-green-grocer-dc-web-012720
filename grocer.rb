@@ -64,14 +64,8 @@ def apply_coupons(cart, coupons)
         cart_item[:count] -= coupons[:count]
       end
     end
-        
     index += 1 
   end
-  
-  
-  
-  # REMEMBER: This method **should** update cart
-  
   cart
 end
 
