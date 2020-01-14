@@ -52,7 +52,8 @@ def apply_coupons(cart, coupons)
       if cart[index][:count] == coupons[index][:num]
         new_item = {:item => "#{cart[index]} W/ COUPON"
           :price => (coupons[index][:price]/coupons[index][:num]),
-          :cost => 
+          :clearance => cart[index][:clearance],
+          :count => cart[index][:count]
         }
       else
         
