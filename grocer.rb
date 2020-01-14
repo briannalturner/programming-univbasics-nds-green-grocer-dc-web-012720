@@ -56,7 +56,7 @@ def apply_coupons(cart, coupons)
           :count => cart[index][:count]
         }
       else
-        
+        nil
       end
         
         
