@@ -56,6 +56,7 @@ def apply_coupons(cart, coupons)
           :clearance => cart[index][:clearance],
           :count => cart[index][:count]
         }
+        new_arr << new_item
       else
         nil
       end
