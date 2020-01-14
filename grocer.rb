@@ -20,6 +20,12 @@ def consolidate_cart(cart)
     
     #iterate over new cart to see if anything matches
     while inner_index < new_cart.length do
+      if new_cart[inner_index][:item] != cart[index][:item]
+        new_cart[index] = cart[index]
+        new_cart[index][:count] = 1
+      else
+        new_cart[index][:count] += 1 
+      end
       
       inner_index+= 1 
     end
