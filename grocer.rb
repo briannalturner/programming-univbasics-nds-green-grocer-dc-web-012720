@@ -15,7 +15,7 @@ items = [
         { :item => "WINE" },
         { :item => "STRYCHNINE" }
       ]
-puts find_item_by_name_in_collection("DOG FOOD", items)
+puts find_item_by_name_in_collection("Jelly", items)
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
