@@ -41,7 +41,6 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  new_arr = []
   index = 0 
   
   while index < coupons.length do
@@ -61,6 +60,7 @@ def apply_coupons(cart, coupons)
           :count => coupons[index][:num],
           :clearance => cart_item[:clearance]
         }
+        cart << cart_item_with_coupon 
     end
         
         
