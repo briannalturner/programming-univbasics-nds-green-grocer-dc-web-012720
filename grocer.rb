@@ -38,6 +38,7 @@ end
 test_cart = [
         { :item => "DOG FOOD" },
         { :item => "WINE" },
+        { :item => "DOG FOOD" },
         { :item => "STRYCHNINE" }
       ]
 puts consolidate_cart(test_cart)
