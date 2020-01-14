@@ -55,7 +55,7 @@ def apply_coupons(cart, coupons)
           :cost => 
         }
       else
-        
+        nil
       end
         
         
