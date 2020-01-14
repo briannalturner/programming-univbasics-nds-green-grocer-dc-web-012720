@@ -48,6 +48,9 @@ def apply_coupons(cart, coupons)
     item_name = coupons[index][:item]
     
     cart_item = find_item_by_name_in_collection(item_name, coupons)
+    couponed_item = coupons[index][:item]
+    
+    
     if new_item
       if cart[index][:count] == coupons[index][:num]
         items = {
