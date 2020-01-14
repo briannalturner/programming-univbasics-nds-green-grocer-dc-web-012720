@@ -5,10 +5,9 @@ def find_item_by_name_in_collection(name, collection)
     if name != collection[index][:item]
       index +=1
     else
-      collection[index][:item]
+      return collection[index][:item]
     end
   end
-  
 end
 
 items = [
