@@ -58,6 +58,7 @@ def apply_coupons(cart, coupons)
       else
         nil
       end
+    end
         
         
         
