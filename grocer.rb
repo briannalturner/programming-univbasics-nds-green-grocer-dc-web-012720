@@ -25,7 +25,7 @@ def consolidate_cart(cart)
       end
       inner_index+= 1 
     end
-    
+    if new_cart[0][:item] == cart[index][:item]
     new_cart[index] = cart[index]
     new_cart[index][:count] = 1
        
