@@ -41,11 +41,10 @@ end
 
 
 test_cart = [
-        { :item => "DOG FOOD" },
-        { :item => "WINE" },
-        { :item => "DOG FOOD" },
-        { :item => "STRYCHNINE" }
-      ]
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "AVOCADO", :price => 3.00, :clearance => true },
+  {:item => "KALE", :price => 3.00, :clearance => false}
+]
 puts consolidate_cart(test_cart)
 
 def apply_coupons(cart, coupons)
