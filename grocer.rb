@@ -44,7 +44,8 @@ def apply_coupons(cart, coupons)
   new_arr = []
   index = 0 
   
-  while index < cart.length do 
+  while index < cart.length do
+    if cart[index][]
     "#{cart[index]} W/ COUPON"
     index += 1 
   end
