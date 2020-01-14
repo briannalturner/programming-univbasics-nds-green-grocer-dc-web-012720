@@ -35,6 +35,12 @@ def consolidate_cart(cart)
 end
 
 
+test_cart = [
+        { :item => "DOG FOOD" },
+        { :item => "WINE" },
+        { :item => "STRYCHNINE" }
+      ]
+puts consolidate_cart(test_cart)
 
 def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
